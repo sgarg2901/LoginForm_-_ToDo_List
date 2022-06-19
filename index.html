@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="row">
+          <div class="logo-row">
+            <a href="https://corp.rakuten.co.in/" target="_blank"></a><img src="logo.jpg" alt="logo" class="logo"></a>
+          </div>
+        </div>
+      </header>
+    
+    <div class="container">
+        <div class="form-container">
+            <form action="to-doList/list.html" class="sign-in">
+                <h2 class="title">Login Page</h2>
+                <hr>
+                
+                <!-- Username -->
+                <div class="input-fields">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="txtCallSign" required>
+                </div>
+
+                <!-- Email -->
+                <div class="input-fields">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="input-fields" id="password" onclick="toggle()">
+                    <i class="fas fa-eye" onclick="myFunction(this)"></i>
+                    <!-- <i class="fas fa-eye"></i> -->
+                    <!-- <span class="show-pass" onclick="toggle()">
+                        <i class="far fa-eye" onclick="myFunction(this)"></i>
+                    </span> -->
+                    <input type="password" placeholder="Password" id="passwordInput" class="form-control input-md" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                        
+                </div>
+                <div id="popover-password">
+                    <p><span id="result"></span></p>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <span class="low-upper-case">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Lowercase &amp; Uppercase
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="one-number">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Number (0-9)
+                            </span> 
+                        </li>
+                        <li class="">
+                            <span class="one-special-char">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Special Character (!@#$%^&*)
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="eight-character">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Atleast 8 Character
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Number -->
+                <div class="input-fields">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <input type="tel" placeholder="01234-56789" required>
+                </div>
+               
+                <!-- <a href="/to-doList/list.html" target="_blank"></a> -->
+                <!-- Button -->
+                <input type="submit" value="Login" class="submit" id="submit" onclick="specialcharecter()">
+                
+                <!-- Social Tags -->
+                <p class="alternate">or Sign-Up using below social media handles:</p>
+                <div class="social" id="facebook">
+                    <a href="https://www.facebook.com/" class="icon" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" class="icon" id="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" class="icon" id="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="password.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+*{
+    margin: 1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url("https://source.unsplash.com/user/erondu");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    padding: auto;
+}
+body,input-fields{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .header-logo-container {
+    position: sticky;
+    top: 0;
+} */
+header {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.logo-row {
+    width: 380px;
+    margin: 0 auto;
+}
+.logo {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 6px;
+    position: sticky;
+}
+.container{
+    
+    position: relative;
+    padding: 5px 20px;
+    /* background-color: white; */
+    border: 1px solid darkgray;
+    overflow: hidden;
+    height: 100%;
+    background-image: url();
+}
+.form-container{
+    max-width: 600px;
+    height: auto; 
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 35%;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    /* background-color: aliceblue; */
+    
+}
+.sign-in{
+    background: rgba(255,255,255,.5);
+}
+
+/* .input-fields.active i.fa-eye{
+    display: inline;
+} */
+
+#password{
+   cursor: pointer;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0.5rem;
+}
+.title{
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: rgb(245, 206, 122);
+    border: 1px solid burlywood;
+    width: 100%;
+}
+.input-fields{
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.5rem;
+}
+.input-fields i{
+    text-align: center;
+    line-height: 55px;
+    color: brown;
+}
+.input-fields input{
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.input-fields:placeholder-shown{
+    text-align: center;
+}
+.input-fields:hover{
+     background-color: burlywood;
+}
+.submit{
+    text-align: center;
+    max-width: 100px;
+    width: 100%;
+    height:40px ;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: bisque;
+    text-transform: uppercase;
+    border: 10px;
+    border-radius: 6px;
+    color: #444;
+    transition: all 0.5s;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: burlywood;
+}
+.alternate{
+    color: brown;
+    text-align: center;
+    word-wrap: normal;
+    font-size: 1em;
+    font-weight: bold;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    height: 46px;
+    width: 46px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: #444;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.icon:hover{
+    color: #20dbc2;
+    border-color: #20dbc2;
+}
+.input-fields #password{
+    position: absolute;
+    top:5%;
+    left: 8%;
+}
+.progress-bar-danger {
+    background-color: #e90f10;
+}
+.progress-bar-warning{
+    background-color: #ffad00;
+}
+.progress-bar-success{
+    background-color: #02b502;
+}
+/* .fa-lock{
+    color: #022255;
+    cursor: pointer;
+} */
+/* .fa-circle{
+    font-size: 6px;  
+} */
+.fa-check{
+    color: #02b502;
+}
